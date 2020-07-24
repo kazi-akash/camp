@@ -24,11 +24,18 @@ app.use(express.static(__dirname+ "/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
 
+
 //connecting to mongo database
-mongo.connect("mongodb://localhost:27017/yelpcamp", {
+mongo.connect("mongodb+srv://root:root@yelpcamp.rrdd8.mongodb.net/yelpcamp?retryWrites=true&w=majority", {
     useUnifiedTopology: true,
     useNewUrlParser: true
 });
+
+//connecting to mongo database
+// mongo.connect("mongodb://localhost:27017/yelpcamp", {
+//     useUnifiedTopology: true,
+//     useNewUrlParser: true
+// });
 
 //Authentication passport-config===========================
 
