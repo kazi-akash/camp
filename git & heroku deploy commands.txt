@@ -1,0 +1,14 @@
+git init
+git status
+git add .
+git commit -m "initial deploy commit"
+heroku create
+
+if modified then:
+git status
+git add modified-life
+git commit -m "modified-lifemodified new life"
+
+//uploading to heroku
+
+git push heroku master
