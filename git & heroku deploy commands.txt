@@ -12,3 +12,9 @@ git commit -m "modified-lifemodified new life"
 //uploading to heroku
 
 git push heroku master
+
+heroku logs
+
+heroku run ls
+
+heroku run ls node_module
